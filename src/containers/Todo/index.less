@@ -1,0 +1,132 @@
+.todosContainer{
+  flex: 1;
+}
+.todosWrap{
+  border-top: 1px solid #41628c;
+  display: flex;
+  .todosInput{
+    background: #fff;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid #41628c;
+    outline: none;
+    padding-left: 120px;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: top;
+    flex: 1;
+  }
+  .addButton{
+    border-radius: 0;
+    height: 60px;
+    width: 120px;
+    vertical-align: top;
+    font-size: 26px;
+  }
+}
+.todosList{
+  flex: 1;
+  padding: 20px 50px;
+  list-style: none;
+  background: rgba(244, 245, 253, 1);
+  margin-bottom: 0;
+  overflow-y: scroll;
+  .todosItem{
+    overflow: hidden;
+    display: flex;
+    background: #fff;
+    margin-top: 10px;
+    text-align: left;
+    border-radius: 4px;
+    line-height: 60px;
+    padding: 0 0 0 10px;
+    height: 60px;
+    box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0, 32, 128, 0.1), 0 0 0 1px #f0f2f7;
+    transition: all .1s ease-out;
+    text-shadow: 0 0 0 #000;
+    button{
+      height: 60px;
+      border-radius: 0;
+      width: 78px;
+    }
+    .input {
+      flex: 1;
+      padding-right: 10px;
+      color: inherit;
+      width: 100%;
+      overflow: hidden;
+      background: none;
+      height: 60px;
+      line-height: inherit;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      color: transparent;
+      text-shadow: inherit;
+    }
+    .inputEdit {
+      flex: 1;
+      color: #fff;
+    }
+  }
+  .todosItemEdit{
+    background: #41628c;
+    color: #fff;
+  }
+  .todosItemComplete{
+    background: rgb(46, 196, 182);
+    text-shadow: 0 0 0 #fff;
+    span{
+      color: #fff;
+    }
+  }
+  .todosItemDelete{
+    background: rgb(255, 70, 126);
+    text-shadow: 0 0 0 #fff;
+    .input{
+      text-decoration: line-through;
+    }
+    >span{
+      text-decoration: line-through;
+      color: #fff;
+    }
+  }
+  .todosItem:last-child{
+    margin-bottom: 10px;
+  }
+}
+.timewrap{
+  margin-right: 10px;
+  color: #666;
+}
+.poseWrap{
+  display: flex;
+  .filter{
+    width: 200px;
+    background: #41628c;
+    .item{
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+      transition: all .2s ease-out;
+    }
+    .item:hover{
+      background: #fff;
+      color: #41628c;
+      border-right: 2px solid #41628c;
+    }
+    .item:active{
+      background: #fff;
+      color: #41628c;
+      border-right: none;
+    }
+    .itemActive{
+      background: #fff;
+      color: #41628c;
+      border-right: none;
+    }
+  }
+}
