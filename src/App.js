@@ -3,7 +3,10 @@ import { Link, Router } from '@reach/router'
 import './static/css/App.css'
 import logo from './static/img/logo.svg';
 import { Todo, Page, Home } from './containers'
-
+// import routerChange from './helpers/listenRouterChange'
+// routerChange((patch) => {
+//   console.log(patch);
+// })
 export default class App extends Component {
   render() {
     return (
