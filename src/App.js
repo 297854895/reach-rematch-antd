@@ -3,9 +3,15 @@ import { Link, Router } from '@reach/router'
 import './static/css/App.css'
 import logo from './static/img/logo.svg';
 import { Todo, Page, Home } from './containers'
-// import routerChange from './helpers/listenRouterChange'
+import routerChange from './helpers/listenRouterChange'
+routerChange((patch) => {
+  console.log(patch);
+})
 // routerChange((patch) => {
-//   console.log(patch);
+//   console.log(patch, '11111111111111');
+// })
+// routerChange((patch) => {
+//   console.log(patch, '222222');
 // })
 export default class App extends Component {
   render() {
